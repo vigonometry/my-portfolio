@@ -19,21 +19,21 @@ import NextLink from "next/link";
 export default function About() {
   return (
     <div className={styles.container}>
-      <VStack p={4} align={{ md: "baseline", base: "center" }} spacing={8}>
+      <VStack p={4} align={{ lg: "baseline", base: "center" }} spacing={8}>
         <Heading
           as="h2"
           textColor="#0D1B1E"
           fontWeight="bold"
-          fontSize={{ md: "5xl", base: "3xl" }}
-          textAlign={{ md: "left", base: "center" }}
+          fontSize={{ lg: "5xl", base: "3xl" }}
+          textAlign={{ lg: "left", base: "center" }}
         >
           About Me
         </Heading>
         <Text
           textColor="#0D1B1E"
           fontWeight="normal"
-          fontSize={{ md: "xl", base: "lg" }}
-          textAlign={{ md: "left", base: "center" }}
+          fontSize={{ lg: "xl", base: "lg" }}
+          textAlign={{ lg: "left", base: "center" }}
         >
           Hi, I’m Vigneshwar, a Computer Science and Quant Finance sophomore at
           NUS, specialising in AI, Machine Learning and Algorithms.
@@ -41,8 +41,8 @@ export default function About() {
         <Text
           textColor="#0D1B1E"
           fontWeight="normal"
-          fontSize={{ md: "xl", base: "lg" }}
-          textAlign={{ md: "left", base: "center" }}
+          fontSize={{ lg: "xl", base: "lg" }}
+          textAlign={{ lg: "left", base: "center" }}
         >
           As of today, I’ve had the pleasure of creating blockchain projects
           that have gained <Link textColor="messenger.500" href="https://www.linkedin.com/posts/vigneshwar-hariharan_fintech-blockchain-nfts-activity-6980366633903042560-r_UZ?utm_source=share&utm_medium=member_desktop">international traction</Link>, prototyped <Link textColor="messenger.500" href="https://www.linkedin.com/posts/vigneshwar-hariharan_im-beyond-ecstatic-to-announce-that-our-activity-6967009887704801280-6ZbR?utm_source=share&utm_medium=member_desktop">medical technology</Link>{" "}
@@ -52,8 +52,8 @@ export default function About() {
         <Text
           textColor="#0D1B1E"
           fontWeight="normal"
-          fontSize={{ md: "xl", base: "lg" }}
-          textAlign={{ md: "left", base: "center" }}
+          fontSize={{ lg: "xl", base: "lg" }}
+          textAlign={{ lg: "left", base: "center" }}
         >
           I also recently began my teaching journey as an Undergraduate Teaching
           Assistant at the NUS School of Computing, where I mentor students on
@@ -62,19 +62,19 @@ export default function About() {
         <Text
           textColor="#0D1B1E"
           fontWeight="normal"
-          fontSize={{ md: "xl", base: "lg" }}
-          textAlign={{ md: "left", base: "center" }}
+          fontSize={{ lg: "xl", base: "lg" }}
+          textAlign={{ lg: "left", base: "center" }}
         >
           Here are a few technologies I’ve been working with recently:
         </Text>
         <HStack spacing="30%" justify="center" px={6}>
-            <UnorderedList textColor="#0D1B1E" fontSize={{ md: "xl", base: "lg" }} fontWeight="normal">
+            <UnorderedList textColor="#0D1B1E" fontSize={{ lg: "xl", base: "lg" }} fontWeight="normal">
                 <ListItem>Python</ListItem>
                 <ListItem>OpenCV</ListItem>
                 <ListItem>Java</ListItem>
                 <ListItem>C</ListItem>
             </UnorderedList>
-            <UnorderedList textColor="#0D1B1E" fontSize={{ md: "xl", base: "lg" }} fontWeight="normal">
+            <UnorderedList textColor="#0D1B1E" fontSize={{ lg: "xl", base: "lg" }} fontWeight="normal">
                 <ListItem>React</ListItem>
                 <ListItem>Node.js</ListItem>
                 <ListItem>GraphQL</ListItem>

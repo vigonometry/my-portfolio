@@ -42,7 +42,7 @@ const MobileDrawer = () => {
   const btnRef = useRef(null);
 
   return (
-    <HStack align="baseline" display={{ base: "flex", md: "none" }} w="full" px={4}>
+    <HStack align="baseline" display={{ base: "flex", lg: "none" }} w="full" px={4}>
       <IconButton
         aria-label="hamburger"
         as={RxHamburgerMenu}
@@ -80,7 +80,7 @@ const MobileDrawer = () => {
 
 export const Header = () => (
   <header>
-    <HStack as ="nav" align="baseline" display={{ base: "none", md: "flex" }}>
+    <HStack as ="nav" align="baseline" display={{ base: "none", lg: "flex" }}>
       <Spacer />
       <HStack
         align="baseline"

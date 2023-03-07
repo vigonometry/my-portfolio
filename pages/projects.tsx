@@ -26,11 +26,11 @@ import {
             as="h2"
             textColor="#0D1B1E"
             fontWeight="bold"
-            fontSize={{ md: "5xl", base: "3xl" }}
+            fontSize={{ lg: "5xl", base: "3xl" }}
           >
             My Projects
           </Heading>
-          <Grid templateColumns={{md: "repeat(3, 1fr)", base: "repeat(1, fr)"}} gap={6}>
+          <Grid templateColumns={{lg: "repeat(3, 1fr)", base: "repeat(1, fr)"}} gap={6}>
             {projectsList.map((p: CardProps) => (
                 <GridItem>
                     <ProjectCard {...p} />
