@@ -66,6 +66,7 @@ const MobileDrawer = () => {
           <DrawerBody>
             <VStack w="full" h="full" divider={<StackDivider />}>
               {pageLinks.map((l) => NavLink(l))}
+              <Link href="https://drive.google.com/file/d/1A9OSN7WVSadcKqKAca-GyNj5dyGmwHTV/view?usp=share_link">Resume</Link>
             </VStack>
           </DrawerBody>
           <DrawerFooter>
