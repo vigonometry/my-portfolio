@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
-import { NavItem, IconItem } from "./Navbar";
+import { NavItem } from "./Navbar";
 
 export const pageLinks: NavItem[] = [
   {

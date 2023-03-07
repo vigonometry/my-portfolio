@@ -15,8 +15,6 @@ import {
     GridItem,
     Box,
   } from "@chakra-ui/react";
-  import Head from "next/head";
-  import Image from "next/image";
   import styles from "../styles/Home.module.css";
   import { projectsList }  from "../components/card/projectsList";
   import { CardProps, ProjectCard } from "../components/card/ProjectCard";
@@ -34,7 +32,7 @@ import {
           </Heading>
           <Grid templateColumns={{md: "repeat(3, 1fr)", base: "repeat(1, fr)"}} gap={6}>
             {projectsList.map((p: CardProps) => (
-                <GridItem>
+                <GridItem key="">
                     {ProjectCard(p)}
                 </GridItem>
             ))}
