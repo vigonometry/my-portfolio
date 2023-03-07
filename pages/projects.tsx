@@ -32,8 +32,8 @@ import {
           </Heading>
           <Grid templateColumns={{md: "repeat(3, 1fr)", base: "repeat(1, fr)"}} gap={6}>
             {projectsList.map((p: CardProps) => (
-                <GridItem key="">
-                    {ProjectCard(p)}
+                <GridItem>
+                    <ProjectCard {...p} />
                 </GridItem>
             ))}
           </Grid>
