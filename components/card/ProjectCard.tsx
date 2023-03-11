@@ -1,18 +1,14 @@
 import {
-  Button,
   ButtonGroup,
   Card,
   CardBody,
   CardFooter,
-  Divider,
-  Flex,
   Heading,
   IconButton,
   Img,
   Link,
   Stack,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { BsGithub, BsYoutube } from "react-icons/bs";
@@ -26,7 +22,7 @@ export type CardProps = {
 };
 export const ProjectCard = (c: CardProps) => {
   return (
-    <Card maxW="sm" h="lg">
+    <Card maxW={{lg: "sm", base: "xs"}} h={{lg: "lg", base: "md"}}>
       <CardBody>
         <Img
           src={c.imgSrc}
@@ -39,7 +35,6 @@ export const ProjectCard = (c: CardProps) => {
           </Text>
         </Stack>
       </CardBody>
-      <Divider />
       <CardFooter>
         <ButtonGroup spacing="2">
           <IconButton aria-label="github" icon={<BsGithub />} as={Link} href={c.ghLink} />

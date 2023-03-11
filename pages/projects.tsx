@@ -1,44 +1,38 @@
 import {
-    Button,
-    Heading,
-    Link,
-    HStack,
-    Img,
-    Spacer,
-    Stack,
-    Text,
-    VStack,
-    List,
-    UnorderedList,
-    ListItem,
-    Grid,
-    GridItem,
-    Box,
-  } from "@chakra-ui/react";
-  import styles from "../styles/Home.module.css";
-  import { projectsList }  from "../components/card/projectsList";
-  import { CardProps, ProjectCard } from "../components/card/ProjectCard";
-  export default function About() {
-    return (
-      <div className={styles.container}>
-        <VStack p={4} align="center" spacing={8} w="full">
-          <Heading
-            as="h2"
-            textColor="#0D1B1E"
-            fontWeight="bold"
-            fontSize={{ lg: "5xl", base: "3xl" }}
-          >
-            My Projects
-          </Heading>
-          <Grid templateColumns={{lg: "repeat(3, 1fr)", base: "repeat(1, fr)"}} gap={6}>
-            {projectsList.map((p: CardProps) => (
-                <GridItem>
-                    <ProjectCard {...p} />
-                </GridItem>
-            ))}
-          </Grid>
-        </VStack>
-      </div>
-    );
-  }
-  
+  Heading,
+  VStack,
+  Grid,
+  GridItem,
+  useColorMode,
+  Stack,
+  Center,
+} from "@chakra-ui/react";
+import { projectsList } from "../components/card/projectsList";
+import { CardProps, ProjectCard } from "../components/card/ProjectCard";
+export default function Projects() {
+  const { colorMode } = useColorMode();
+  return (
+    <VStack p={8} spacing={8}>
+      <Heading
+        as="h2"
+        textColor={colorMode == "light" ? "#0D1B1E" : "#FFFFFF"}
+        fontWeight="bold"
+        fontSize={{ lg: "5xl", base: "3xl" }}
+      >
+        My Projects
+      </Heading>
+      <Center>
+        <Grid
+          templateColumns={{ lg: "repeat(3, 1fr)", base: "repeat(1, fr)" }}
+          gap={6}
+        >
+          {projectsList.map((p: CardProps) => (
+            <GridItem>
+              <ProjectCard {...p} />
+            </GridItem>
+          ))}
+        </Grid>
+      </Center>
+    </VStack>
+  );
+}
