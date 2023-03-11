@@ -27,7 +27,7 @@ export default function Home() {
             fontSize={{ lg: "8xl", base: "5xl" }}
             textAlign={{ lg: "left", base: "center" }}
           >
-            Vigneshwar H.
+            Vigneshwar Hariharan.
           </Heading>
           <Text
             textColor={colorMode == "light" ? "#0D1B1E" : "#FFFFFF"}
